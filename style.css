@@ -1,0 +1,31 @@
+body{
+	background-image: linear-gradient(135deg, #8F3A84, #ED61A9, #8F3A84, #ED61A9, #8F3A84);
+	margin: 0;
+	text-align: center;
+}
+header{
+	padding-bottom:3em;
+}
+div{
+	max-width: 900px;
+	margin: auto;
+	border: 3px solid rgba(0,0,0,0.5);
+	border-radius: 30px;
+	padding: 2em 4em;
+}
+table{
+	margin: auto;
+}
+tr{
+	background-color: rgba(200,200,200,0.5);
+	border-radius: 5px;
+}
+footer{
+	padding-top: 3em;
+}
+.link{
+	color: #000;
+}
+.link:hover{
+	color: #7307A3;
+}
