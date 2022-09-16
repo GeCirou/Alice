@@ -5,6 +5,20 @@ body{
 }
 header{
 	padding-bottom:3em;
+	display: inline-flex;
+	align-items: center;
+}
+header h1{
+	-ms-flex-align: center;
+}
+.cheshire{
+	height: 8em;
+	width: 6em;
+	border-radius: 10px;
+	-ms-flex-align: end;
+}
+.sep{
+	width: 3em;
 }
 div{
 	max-width: 900px;
@@ -20,8 +34,35 @@ tr{
 	background-color: rgba(200,200,200,0.5);
 	border-radius: 5px;
 }
+.fila{
+	width: 30em;
+}
+.al{
+	width: 30em;
+	display: inline-flex;
+}
+.sep2{
+	width: 13em;
+	height: 3em;
+}
+.sep1{
+	width: 3em;
+}
+.alice{
+	height: 3em;
+}
+.corto{
+	width: 15em;
+	height: 3em;
+}
+.largo{
+	width: 30em;
+	height: 3em;
+}
 footer{
 	padding-top: 3em;
+	padding-bottom: 2em;
+	width: 100%;
 }
 .link{
 	color: #000;
