@@ -3,52 +3,76 @@ body{
 	margin: 0;
 	text-align: center;
 }
+
 header{
 	padding-bottom:3em;
 	display: inline-flex;
+	flex-wrap: wrap;
 	align-items: center;
 }
 header h1{
+	font-size: 3em;
+	font-family: 'Fondamento', cursive;
+	font-style: italic;
 	-ms-flex-align: center;
+	margin-right: 1em;
+	margin-left: 4em;
 }
+/* imagen gato */
 .cheshire{
 	height: 8em;
 	width: 6em;
 	border-radius: 10px;
 	-ms-flex-align: end;
 }
-.sep{
-	width: 3em;
-}
+
 div{
 	max-width: 900px;
 	margin: auto;
 	border: 3px solid rgba(0,0,0,0.5);
 	border-radius: 30px;
 	padding: 2em 4em;
+	display: inline-block;
+	justify-content: center;
 }
-.A label,
-.E label {
+div label {
+	font-size: 1.2em;
+	font-family: 'Parisienne', cursive;
+	background-color: #8F3A84;
+	color: aliceblue;
 	border: 2px dashed rgba(0,0,0,0.5);
 	border-radius: 10px;
 	padding: 1em;
 }
+
 table{
+	width: auto;
 	margin: auto;
 }
 tr{
 	border-radius: 5px;
 }
 h2{
+	font-size: 2em;
+	font-family: 'Fondamento', cursive;
+	font-style: italic;
 	text-decoration: underline;
 }
 .fila{
 	width: 30em;
 }
+/* th Alicia */
 .al{
 	width: 30em;
 	display: inline-flex;
+	justify-content: center;
 }
+.al h2{
+	margin-right: 1em;
+	margin-left: 4em;
+}
+
+/*separadores*/
 .sep2{
 	width: 13em;
 	height: 3em;
@@ -56,9 +80,12 @@ h2{
 .sep1{
 	width: 3em;
 }
+/*imagen Alicia*/
 .alice{
 	height: 3em;
 }
+
+/* celdas */
 .corto{
 	width: 15em;
 	height: 3em;
@@ -80,14 +107,23 @@ h2{
 	margin-top: 1em;
 	margin-bottom: 2em;
 }
+/*input resistencia*/
 .resA{
 	width: 28em;
 }
+/*textarea*/
 .eq{
 	width: 29em;
 	height: 8em; 
 }
+
 footer{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+
+	font-size: 2em;
+	font-family: 'Parisienne', cursive;
 	padding-top: 3em;
 	padding-bottom: 2em;
 	width: 100%;
