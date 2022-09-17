@@ -27,12 +27,20 @@ div{
 	border-radius: 30px;
 	padding: 2em 4em;
 }
+.A label,
+.E label {
+	border: 2px dashed rgba(0,0,0,0.5);
+	border-radius: 10px;
+	padding: 1em;
+}
 table{
 	margin: auto;
 }
 tr{
-	background-color: rgba(200,200,200,0.5);
 	border-radius: 5px;
+}
+h2{
+	text-decoration: underline;
 }
 .fila{
 	width: 30em;
@@ -55,9 +63,29 @@ tr{
 	width: 15em;
 	height: 3em;
 }
+.corto input {
+	margin-top: 1em;
+	margin-bottom: 2em;
+}
+.corto input[type="checkbox"] {
+	margin-left: 1em;
+	margin-right: 1em;
+}
 .largo{
 	width: 30em;
 	height: 3em;
+}
+.largo input,
+.largo textarea {
+	margin-top: 1em;
+	margin-bottom: 2em;
+}
+.resA{
+	width: 28em;
+}
+.eq{
+	width: 29em;
+	height: 8em; 
 }
 footer{
 	padding-top: 3em;

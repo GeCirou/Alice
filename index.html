@@ -14,9 +14,9 @@
 		<canvas class="sep"></canvas>
 		<img class="cheshire" src="https://i.imgur.com/oSLV7ug_d.webp?maxwidth=760&fidelity=grand" alt="">
 	</header>
-    <div>
+    <div class="A">
     	<table>
-    		<tr><th class="al"><canvas class="sep2"></canvas><label><h2>Alicia</h2></label><canvas class="sep1"></canvas><img class="alice" src="https://i.imgur.com/JWojsZK_d.webp?maxwidth=760&fidelity=grand" alt=""></th></tr>
+    		<tr><th class="al"><canvas class="sep2"></canvas><h2>Alicia</h2><canvas class="sep1"></canvas><img class="alice" src="https://i.imgur.com/JWojsZK_d.webp?maxwidth=760&fidelity=grand" alt=""></th></tr>
     		<tr><td></td></tr>
     	</table>
     	<table>
@@ -25,27 +25,27 @@
     			<td class="corto"><label>Lógica</label></td>
     		</tr>
     		<tr>
-    			<td class="corto"><input type="number" name="agil"></input></td>
-    			<td class="corto"><input type="number" name="logic"></td>
+    			<td class="corto"><input min="0" value="6" type="number" name="agil"></input></td>
+    			<td class="corto"><input min="0" value="6" type="number" name="logic"></td>
     		</tr>
     		<tr>
     			<td class="corto"><label>Locura</label></td>
     			<td class="corto"><label>Combate</label></td>
     		</tr>
     		<tr>
-    			<td class="corto"><input type="number" name="loco"></td>
-    			<td class="corto"><input type="number" name="combA"></td>
+    			<td class="corto"><input min="0" value="0" type="number" name="loco"></td>
+    			<td class="corto"><input min="0" value="6" type="number" name="combA"></td>
     		</tr>
     	</table>
     	<table>
     		<tr>
     			<td class="largo"><label>Resistencia</label></td>
     		</tr>
-    		<tr><td class="largo"><input type="number" name="resA"></td></tr>
+    		<tr><td class="largo"><input class="resA" min="0" value="20" type="number" name="resA"></td></tr>
     		<tr>
     			<td class="largo"><label>Equipamiento</label></td>
     		</tr>
-    		<tr><td class="largo"><textarea placeholder="Equipamiento"></textarea></td></tr>
+    		<tr><td class="largo"><textarea class="eq" placeholder="Equipamiento"></textarea></td></tr>
     	</table>
     	<table>
     		<tr>
@@ -59,17 +59,17 @@
     	</table>
     </div>
     <p></p>
-    <div>
+    <div class="E">
     	<table>
     		<tr>
     			<th class="largo"><h2>Enemigos de pesadilla</h2></th>
     		</tr>
     		<tr><td></td></tr>
     		<tr>
-    			<td class="largo"><label>Combate: </label><input type="number" name="combEnemigo"></td>
+    			<td class="largo"><label>Combate:    <input type="number" min="0" name="combEnemigo"></label></td>
     		</tr>
     		<tr>
-    			<td class="largo"><label>Resistencia: <input type="number" name="resEnemigo"></label></td>
+    			<td class="largo"><label>Resistencia: <input type="number" min="0" name="resEnemigo"></label></td>
     		</tr>
     	</table>
     </div>
