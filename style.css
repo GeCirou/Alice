@@ -27,29 +27,42 @@ header h1{
 	-ms-flex-align: end;
 }
 
-div{
+.divA{
+	width: 75%;
 	max-width: 900px;
 	margin: auto;
+	margin-bottom: 20px;
 	border: 3px solid rgba(0,0,0,0.5);
 	border-radius: 30px;
 	padding: 2em 4em;
-	display: inline-block;
+	display: flex;
+	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 }
-div label {
+.divA label {
 	font-size: 1.2em;
 	font-family: 'Parisienne', cursive;
 	background-color: #8F3A84;
 	color: aliceblue;
 	border: 2px dashed rgba(0,0,0,0.5);
 	border-radius: 10px;
-	padding: 1em;
+	width: 45%;
+	padding: 10px;
+}
+.divB,
+.divD{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.divC{
+	display: flex;
+	flex-direction: column;
 }
 
-table{
-	width: auto;
-	margin: auto;
-}
+
 tr{
 	border-radius: 5px;
 }
@@ -60,60 +73,10 @@ h2{
 	text-decoration: underline;
 }
 
-/* th Alicia */
-.al{
-	width: 30em;
-	display: inline-flex;
-	justify-content: center;
-}
-.al h2{
-	margin-right: 1em;
-	margin-left: 4em;
-}
 
-/*separadores*/
-.sep2{
-	width: 13em;
-	height: 3em;
-}
-.sep1{
-	width: 3em;
-}
 /*imagen Alicia*/
 .alice{
-	height: 3em;
-}
-
-/* celdas */
-.corto{
-	width: 15em;
-	height: 3em;
-}
-.corto input {
-	margin-top: 1em;
-	margin-bottom: 2em;
-}
-.corto input[type="checkbox"] {
-	margin-left: 1em;
-	margin-right: 1em;
-}
-.largo{
-	width: 30em;
-	height: 3em;
-}
-.largo input,
-.largo textarea {
-	margin-top: 1em;
-	margin-bottom: 2em;
-}
-/*input resistencia*/
-.resA{
-	width: 28em;
-}
-/*textarea*/
-.eq{
-	width: 29em;
-	height: 8em; 
+	height: 1.5em;
 }
 
 footer{
