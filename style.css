@@ -41,14 +41,20 @@ header h1{
 	align-items: center;
 }
 .divA label {
-	font-size: 1.2em;
+	font-size: 2rem;
 	font-family: 'Parisienne', cursive;
 	background-color: #8F3A84;
 	color: aliceblue;
 	border: 2px dashed rgba(0,0,0,0.5);
 	border-radius: 10px;
-	width: 45%;
+	width: 18rem;
 	padding: 10px;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+.divA input[type="number"]{
+	font-size: 1rem;
+	width: 3rem;
 }
 .divB,
 .divD{
@@ -62,6 +68,14 @@ header h1{
 	flex-direction: column;
 }
 
+.divD label {
+	display: flex;
+	flex-direction: column;
+}
+.divD input[type="checkbox"] {
+	flex-direction: row;
+	margin: 0.5rem;
+}
 
 tr{
 	border-radius: 5px;
