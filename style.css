@@ -93,6 +93,12 @@ h2{
 	height: 1.5em;
 }
 
+.eq {
+	margin-top: 15px;
+	width: 12rem;
+	height: 10rem;
+}
+
 footer{
 	display: flex;
 	flex-direction: row;
