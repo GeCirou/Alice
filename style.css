@@ -6,55 +6,47 @@ body{
 }
 
 header{
-	padding-bottom:3em;
+	padding-bottom:30px;
 	display: inline-flex;
 	flex-wrap: wrap;
 	align-items: center;
 }
 header h1{
-	font-size: 2em;
+	font-size: 60px;
 	font-family: 'Fondamento', cursive;
 	font-style: italic;
 	-ms-flex-align: center;
-	margin-right: 1em;
-	margin-left: 4em;
-}
-/* imagen gato */
-.cheshire{
-	height: 8em;
-	width: 6em;
-	border-radius: 10px;
-	-ms-flex-align: end;
 }
 
-.divA{
+.divA {
 	width: 75%;
 	max-width: 900px;
 	margin: auto;
 	margin-bottom: 20px;
 	border: 3px solid rgba(0,0,0,0.5);
 	border-radius: 30px;
-	padding: 2em 4em;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
 .divA label {
-	font-size: 2rem;
+	font-size: 40px;
 	font-family: 'Parisienne', cursive;
 	background-color: #8F3A84;
 	color: aliceblue;
 	border: 2px dashed rgba(0,0,0,0.5);
 	border-radius: 10px;
-	width: 18rem;
+	width: 400px;
 	padding: 10px;
-	margin-top: 1rem;
-	margin-bottom: 1rem;
+	margin-top: 15px;
+	margin-bottom: 20px;
 }
 .divA input[type="number"]{
-	font-size: 1rem;
-	width: 3rem;
+	font-size: 40px;
+	width: 60px;
+	text-align: center;
+	background-color: aliceblue;
 }
 .divB,
 .divD{
@@ -74,44 +66,74 @@ header h1{
 }
 .divD input[type="checkbox"] {
 	flex-direction: row;
-	margin: 0.5rem;
+	margin: 15px;
+	width: 50px;
 }
 
 tr{
 	border-radius: 5px;
 }
 h2{
-	font-size: 2em;
+	font-size: 50px;
 	font-family: 'Fondamento', cursive;
 	font-style: italic;
 	text-decoration: underline;
 }
 
-
-/*imagen Alicia*/
-.alice{
-	height: 1.5em;
+.divE {
+	width: 75%;
+	max-width: 900px;
+	margin: auto;
+	margin-bottom: 150px;
+	border: 3px solid rgba(0,0,0,0.5);
+	border-radius: 30px;
+	padding: 50px 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.divE div {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.divE label {
+	font-size: 60px;
+	background-color: #8F3A84;
+	color: aliceblue;
+	border: 2px dashed rgba(0,0,0,0.5);
+	border-radius: 10px;
+	padding: 10px;
+	margin: 15px 10px 20px;
+}
+.divE button {
+	font-size: 40px;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.75);
 }
 
 .eq {
 	margin-top: 15px;
-	width: 12rem;
-	height: 10rem;
+	width: 250px;
+	height: 200px;
+	font-size: 30px;
 }
 
 footer{
+	background-color: #8F3A84;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
-
-	font-size: 2em;
+	color: aliceblue;
+	font-size: 40px;
 	font-family: 'Parisienne', cursive;
-	padding-top: 3em;
-	padding-bottom: 2em;
+	padding-top: 40px;
+	padding-bottom: 70px;
 	width: 100%;
 }
 .link{
-	color: #000;
+	color: aliceblue;
 }
 .link:hover{
 	color: #7307A3;

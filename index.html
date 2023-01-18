@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fondamento:ital@0;1&family=Parisienne&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fondamento:ital@0;1&family=Parisienne&display=swap" rel="stylesheet">
+    <script src="alice.js"></script>
     <title>Alicia en el país de las pesadillas</title>
 </head>
 <body>
     <header id="header">
 		<h1>¡¡Bienvenido al país de las pesadillas!!</h1>
-		<img class="cheshire" src="https://i.imgur.com/oSLV7ug_d.webp?maxwidth=760&fidelity=grand" alt="">
 	</header>
     <div class="divA">
-        <div  class="al"><h2>__Alicia__<img class="alice" src="https://i.imgur.com/JWojsZK_d.webp?maxwidth=760&fidelity=grand" alt=""></h2></div>
+        <div  class="al"><h2>Alicia</h2></div>
         <div class="divB">
             <label>Agilidad: <input min="0" value="6" type="number" name="agil"></input></label>
             <label>Lógica: <input min="0" value="6" type="number" name="logic"></label>
@@ -30,8 +30,15 @@
             <label>Más y más extraño <span><input type="checkbox" name="m1"><input type="checkbox" name="m2"><input type="checkbox" name="m3"></span></label></div>
     </div>
     <div  class="divA">
-        <h2>__Enemigos de pesadilla__</h2>
+        <h2>Enemigos de pesadilla</h2>
         <label>Combate:    <input type="number" min="0" name="combEnemigo"></label><label>Resistencia: <input type="number" min="0" name="resEnemigo"></label>
+    </div>
+    <div class="divE">
+        <div>
+            <label for="" id="lbl1">1</label>
+            <label for="" id="lbl2">1</label> <br>
+        </div>
+        <button type="button" onclick="dice()">Tirar dados</button>
     </div>
     <footer>
     	<label>Ge Cirou</label>
