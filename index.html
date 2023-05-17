@@ -1,48 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Planilla para el librojuego de Alicia en el país de las pesadillas.">
+    <title>Alicia en el país de las pesadillas</title>
     <link rel="stylesheet" href="style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fondamento:ital@0;1&family=Parisienne&display=swap" rel="stylesheet">
     <script src="alice.js"></script>
-    <title>Alicia en el país de las pesadillas</title>
 </head>
 <body>
-    <header id="header">
-		<h1>¡¡Bienvenido al país de las pesadillas!!</h1>
-	</header>
-    <div class="divA">
-        <div  class="al"><h2>Alicia</h2></div>
-        <div class="divB">
-            <label>Agilidad: <input min="0" value="6" type="number" name="agil"></input></label>
-            <label>Lógica: <input min="0" value="6" type="number" name="logic"></label>
-            <label>Locura: <input min="0" value="0" type="number" name="loco"></label>
-            <label>Combate: <input min="0" value="6" type="number" name="combA"></label></div>
-    	<div class="divC">
-            <label>Resistencia: <input class="resA" min="0" value="20" type="number" name="resA"></label>
-            <label>Equipamiento: <textarea class="eq" placeholder="Equipamiento"></textarea></label></div>
-        <div class="divD">
-            <label>La pluma es más fuerte <span><input type="checkbox" name="p1"><input type="checkbox" name="p2"><input type="checkbox" name="p3"></span></label>
-            <label>Más y más extraño <span><input type="checkbox" name="m1"><input type="checkbox" name="m2"><input type="checkbox" name="m3"></span></label></div>
-    </div>
-    <div  class="divA">
-        <h2>Enemigos de pesadilla</h2>
-        <label>Combate:    <input type="number" min="0" name="combEnemigo"></label><label>Resistencia: <input type="number" min="0" name="resEnemigo"></label>
-    </div>
-    <div class="divE">
-        <div>
-            <label for="" id="lbl1">1</label>
-            <label for="" id="lbl2">1</label> <br>
-        </div>
-        <button type="button" onclick="dice()">Tirar dados</button>
-    </div>
-    <footer>
-    	<label>Ge Cirou</label>
-    	<a class="link" href="#header">volver al inicio</a>
-    </footer>
+    <main>
+        <header id="header">
+            <h1>¡¡Bienvenido al país de las pesadillas!!</h1>
+        </header>
+        <section class="main-section">
+            <div class="section-title">
+                <h2>Alicia</h2>
+            </div>
+            <div class="alicia-stats__1">
+                <div class="etiquetas">
+                    <label>
+                        <span>Agilidad: </span>
+                        <input min="0" value="6" type="number" name="agil">
+                    </label>
+                </div>
+                <div class="etiquetas">
+                    <label>
+                        <span>Lógica: </span>
+                        <input min="0" value="6" type="number" name="logic">
+                    </label>
+                </div>
+                <div class="etiquetas">
+                    <label>
+                        <span>Locura: </span>
+                        <input min="0" value="0" type="number" name="loco">
+                    </label>
+                </div>
+                <div class="etiquetas">
+                    <label>
+                        <span>Combate: </span>
+                        <input min="0" value="6" type="number" name="combA">
+                    </label>
+                </div>
+            </div>
+            <div class="alicia-stats__2">
+                <div class="etiquetas">
+                    <label>
+                        <span>Resistencia: </span>
+                        <input class="resA" min="0" value="20" type="number" name="resA">
+                    </label>
+                </div>
+                <div class="etiquetas">
+                    <label>
+                        <span>Equipamiento: </span>
+                        <textarea class="eq" placeholder="Equipamiento"></textarea>
+                    </label>
+                </div>
+            </div>
+            <div class="alicia-modificadores">
+                <div class="etiquetas">
+                    <label>
+                        <span>La pluma es más fuerte </span>
+                        <div>
+                            <input type="checkbox" name="p1">
+                            <input type="checkbox" name="p2">
+                            <input type="checkbox" name="p3">
+                        </div>
+                    </label>
+                </div>
+                <div class="etiquetas">
+                    <label>
+                        <span>Más y más extraño </span>
+                        <div>
+                            <input type="checkbox" name="m1">
+                            <input type="checkbox" name="m2">
+                            <input type="checkbox" name="m3">
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </section>
+        <section class="main-section">
+            <div class="section-title">
+                <h2>Enemigos de pesadilla</h2>
+            </div>
+            <div class="etiquetas">
+                <label>
+                    <span>Combate: </span>
+                    <input type="number" min="0" name="combEnemigo" value="0">
+                </label>
+            </div>
+            <div class="etiquetas">
+                <label>
+                    <span>Resistencia: </span>
+                    <input type="number" min="0" name="resEnemigo" value="0">
+                </label>
+            </div>
+        </section>
+        <section class="main-section">
+            <div class="imagen">
+                <figure>
+                    <img src="./Cheshire.png" alt="Cheshire cat.">
+                </figure>
+            </div>
+            <div class="contenedor-dados">
+                <label for="" id="lbl1">1</label>
+            </div>
+            <div class="contenedor-dados">
+                <label for="" id="lbl2">1</label>
+            </div>
+            <div class="dados__roll">
+                <button type="button" class="roll" onclick="dice()">Tirar dados</button>
+            </div>
+        </section>
+        <footer>
+            <a class="link" href="#header">volver al inicio</a>
+            <p>
+                Ge Cirou
+            </p>
+        </footer>
+    </main>
 </body>
 </html>
