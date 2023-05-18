@@ -1,0 +1,38 @@
+header h1{
+    font-size: 5rem;
+}
+.section-title {
+    font-size: 3rem;
+}
+.main-section .etiquetas1,
+.main-section .etiquetas2,
+.main-section .etiquetas3,
+.main-section .etiquetas4,
+.main-section .etiquetas5,
+.main-section .etiquetas6,
+.main-section .etiquetas7,
+.main-section .etiquetas8,
+.main-section .etiquetas9,
+.main-section .etiquetas10 {
+    font-size: 3rem;
+}
+.main-section .etiquetas1 {
+    width: 45%;
+    order: 1;
+}
+.main-section .etiquetas2 {
+    width: 45%;
+    order: 2;
+}
+.main-section .etiquetas3 {
+    width: 45%;
+    order: 3;
+}
+.main-section .etiquetas4 {
+    width: 45%;
+    order: 4;
+}
+.main-section .contenedor-dados {
+    font-size: 4rem;
+    height: 7rem;
+}
